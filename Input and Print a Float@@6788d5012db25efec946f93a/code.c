@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main() {
+float main() {
     float number;
     printf("You entered: %.2f",number);
     return 0;
