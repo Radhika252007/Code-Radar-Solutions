@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int cp,sp;
+    int cp,sp,diff;
     scanf("%d %d",&cp,&sp);
-    diff = sp-cp;
+    diff = sp - cp;
     if(diff>0){
         printf("Profit");
     }
