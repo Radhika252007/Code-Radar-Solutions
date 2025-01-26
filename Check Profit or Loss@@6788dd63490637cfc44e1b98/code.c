@@ -2,7 +2,7 @@
 
 int main() {
     int cp,sp;
-    scanf("%d %d",&c0,&sp);
+    scanf("%d %d",&cp,&sp);
     diff = sp-cp;
     if(diff>0){
         printf("Profit");
