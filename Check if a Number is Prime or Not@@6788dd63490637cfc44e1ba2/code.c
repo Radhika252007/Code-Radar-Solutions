@@ -6,8 +6,9 @@ int main() {
     scanf("%d",&a);
     if(a>1){
         for(i=2;i*i<=a;i++){
-            if(n%i==0){
+            if(a%i==0){
                 result=0;
+                break;
             }
         }
     }
