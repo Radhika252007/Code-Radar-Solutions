@@ -6,7 +6,7 @@ int main() {
     if(a>='A' &7 a<='Z'){
         a = a+32;
     }
-    if(a>='1' && a<='9'){
+    if(a>='0' && a<='9'){
         printf("Digit");
     }
     else if(a>='a' && a<='z'){
@@ -18,7 +18,7 @@ int main() {
         }
     }
     else{
-        printf("special Character");
+        printf("Special Character");
     }
     return 0;
 }
