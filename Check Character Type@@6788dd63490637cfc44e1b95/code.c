@@ -3,7 +3,7 @@
 int main() {
     char a;
     scanf("%c",&a);
-    if(a>='A' &7 a<='Z'){
+    if(a>='A' && a<='Z'){
         a = a+32;
     }
     if(a>='0' && a<='9'){
