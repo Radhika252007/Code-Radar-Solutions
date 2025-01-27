@@ -24,6 +24,6 @@ int main() {
         default:
         printf("error");
         }
-    }
+    
     return 0;
 }
