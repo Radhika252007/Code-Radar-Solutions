@@ -6,11 +6,10 @@ int main() {
     scanf("%d",&a);
     count = 0;
     while(a!=0){
-        a = a>>1;
         if(a&1==1){
-            printf("%d",count);
             break;
         }
+        a = a>>1;
         count++;
     } 
     
