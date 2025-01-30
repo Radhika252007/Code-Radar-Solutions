@@ -6,12 +6,12 @@ int main() {
     scanf("%d",&a);
     b = 1<<31;
     count = 0;
-    while(a!=0){
+    while(a&b!=31){
         if(a&b==1){
             break;
         }
         a = a<<1;
-        count++
+        count++;
     }
     printf("%d",count);
     return 0;
