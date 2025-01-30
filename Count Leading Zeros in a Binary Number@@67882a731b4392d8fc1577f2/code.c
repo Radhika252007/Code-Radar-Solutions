@@ -6,8 +6,8 @@ int main() {
     scanf("%d",&a);
     b = 1<<31;
     count = 0;
-    while(a!=31){
-        if(a&b==1){
+    while(a!=0){
+        if((a&b)==31){
             break;
         }
         a = a<<1;
