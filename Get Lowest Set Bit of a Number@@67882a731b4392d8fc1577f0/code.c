@@ -11,7 +11,7 @@ int main() {
             printf("%d",count);
         }
         break;
-        count = count +1;
+        count++;
     } 
     
 
