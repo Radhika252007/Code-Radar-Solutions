@@ -6,10 +6,7 @@ int main() {
     scanf("%d",&a);
     b = 1<<31;
     count = 0;
-    while(a!=0){
-        if((a&b)==31){
-            break;
-        }
+    while((a&b)==0 && count<32){
         a = a<<1;
         count++;
     }
