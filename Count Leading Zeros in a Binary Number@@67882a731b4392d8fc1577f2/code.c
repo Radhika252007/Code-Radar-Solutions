@@ -6,7 +6,7 @@ int main() {
     scanf("%d",&a);
     b = 1<<31;
     count = 0;
-    while(a&b==0){
+    while(a!=0){
         if(a&b==1){
             break;
         }
