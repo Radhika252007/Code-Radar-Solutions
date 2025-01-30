@@ -12,8 +12,7 @@ int main() {
         a = a>>1;
         count++;
     } 
-    
-
+    printf("%d",count);
     
     return 0;
 }
