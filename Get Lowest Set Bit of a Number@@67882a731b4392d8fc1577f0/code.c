@@ -7,11 +7,13 @@ int main() {
     count = 0
     while(a&1==0){
         a = a>>1;
-        if(a&1==1)
+        if(a&1==1){
+            printf("%d",count);
+        }
         break;
         count = count +1;
     } 
-    printf("%d",count);
+    
 
     
     return 0;
