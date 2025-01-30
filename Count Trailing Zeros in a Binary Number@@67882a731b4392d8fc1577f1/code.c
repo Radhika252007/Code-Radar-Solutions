@@ -9,7 +9,7 @@ int main() {
             break;
         }
         a = a>>1;
-        count++
+        count++;
     }
     printf("%d",count);
     return 0;
