@@ -18,7 +18,7 @@ int main() {
     return 0;
 }
 int isprime(int a){
-    prime=1;
+    int prime=1;
     for(int i=0;i*i<=a;i++){
         if(a%i==0){
             prime=0;
