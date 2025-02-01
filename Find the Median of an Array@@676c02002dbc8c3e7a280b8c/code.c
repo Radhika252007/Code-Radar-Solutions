@@ -14,7 +14,7 @@ int main() {
         printf("%d",result);
     }
     else{
-        int result = arr[(a+1)/2];
+        int result = arr[(a-1)/2];
         printf("%d",result);
     }
     return 0;
