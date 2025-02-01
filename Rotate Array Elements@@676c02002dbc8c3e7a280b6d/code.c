@@ -14,7 +14,7 @@ int main() {
         arr[j]=arr[j+b];
     }
     for(int k =0;k<a;k++){
-        printf("%d\n",arr[k]);
+        printf("%d\n",arr[a]);
     }
     return 0;
 }
