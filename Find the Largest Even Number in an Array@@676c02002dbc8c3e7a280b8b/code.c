@@ -19,7 +19,10 @@ int main() {
 }
 int isprime(int a){
     int prime=1;
-    for(int i=0;i*i<=a;i++){
+    if(a<=1){
+        return 0;
+    }
+    for(int i=2;i*i<=a;i++){
         if(a%i==0){
             prime=0;
             break;
