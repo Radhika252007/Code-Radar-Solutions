@@ -7,16 +7,15 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int duplicate = arr[0];
-    int count =0;
-    for(int j=1;j<a;j++){
-        if(arr[j]==duplicate){
-            duplicate= arr[j];
-            count++;
+    
+    int duplicate=arr[0];
+    for(int i=0;i<a;i++){
+        for(int j=i+1;j<a;j++){
+            if(arr[i]==arr[j]){
+                duplicate = arr[i];
+            }
         }
     }
-    if(count>0){
-        printf("%d",duplicate);
-    }
+    printf("%d",duplicate);
     return 0;
 }
