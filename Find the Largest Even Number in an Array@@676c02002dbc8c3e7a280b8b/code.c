@@ -1,5 +1,5 @@
 #include <stdio.h>
-int isprime(int a);
+int iseven(int a);
 
 int main() {
     int a;
@@ -10,23 +10,16 @@ int main() {
     }
     int result = -1;
     for(int j=0;j<a;j++){
-        if(isprime(arr[j])){
+        if(iseven(arr[j])){
             result = arr[j];
         }
     }
     printf("%d",result);
     return 0;
 }
-int isprime(int a){
-    int prime=1;
-    if(a<=1){
-        return 0;
+int iseven(int a){
+    if(a%2==0){
+        return 1;
     }
-    for(int i=2;i*i<=a;i++){
-        if(a%i==0){
-            prime=0;
-            break;
-        }
-    }
-    return prime;
+    return 0;
 }
