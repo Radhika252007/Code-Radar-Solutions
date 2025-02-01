@@ -1,5 +1,4 @@
 #include <stdio.h>
-int iseven(int a);
 
 int main() {
     int a;
@@ -11,18 +10,12 @@ int main() {
 
     int result = -1;
     for(int j=0;j<a;j++){
-        if(iseven(arr[j])){
+        if(arr[j]%2==0){
             if(arr[j]>result){
                 result=arr[j];
             }
         }
     }
     printf("%d",result);
-    return 0;
-}
-int iseven(int a){
-    if(a%2==0){
-        return 1;
-    }
     return 0;
 }
