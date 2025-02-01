@@ -14,7 +14,7 @@ int main() {
             count++;
         }
     }
-    printf("%d",&count);
+    printf("%d",count);
     return 0;
 }
 int isPrime(int a){
