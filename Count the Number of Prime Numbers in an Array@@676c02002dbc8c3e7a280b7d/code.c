@@ -19,14 +19,16 @@ int main() {
 }
 int isPrime(int a){
     int isPrime = 1;
-    if(a>1){
-        for(int i=2;i*i<=a;i++){
-            if(a%i==0){
-                isPrime=0;
-                break;
+    if(a<=1){
+        return 0;
+    }
+    for(int i=2;i*i<=a;i++){
+        if(a%i==0){
+            isPrime=0;
+            break;
             }
         }
-    }
+    
     return isPrime;
     
 }
