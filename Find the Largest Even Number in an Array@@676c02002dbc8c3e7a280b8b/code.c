@@ -8,10 +8,13 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
+
     int result = -1;
     for(int j=0;j<a;j++){
         if(iseven(arr[j])){
-            result = arr[j];
+            if(arr[j]>result){
+                result=arr[j];
+            }
         }
     }
     printf("%d",result);
