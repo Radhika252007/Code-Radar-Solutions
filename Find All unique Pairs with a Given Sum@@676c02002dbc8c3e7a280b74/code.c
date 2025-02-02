@@ -10,9 +10,9 @@ int main() {
     int b;
     scanf("%d",&b);
     for(int i=0;i<a-1;i++){
-        for(int j=i+1;j<a;j++){
+        for(int j=1+i;j<a;j++){
             if(arr[i]+arr[j]==b){
-                printf("%d %d",arr[j],arr[i]);
+                printf("%d %d",arr[i],arr[j]);
             }
         }
     }
