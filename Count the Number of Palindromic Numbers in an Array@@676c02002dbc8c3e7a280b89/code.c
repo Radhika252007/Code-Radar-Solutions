@@ -21,7 +21,7 @@ int isPalindrome(int a){
     int reversed = 0;
     int temp = a;
     int b;
-    while(temp/10!=0){
+    while(temp>0){
         b = temp%10;
         temp = temp/10;
         reversed = (reversed*10)+b;
