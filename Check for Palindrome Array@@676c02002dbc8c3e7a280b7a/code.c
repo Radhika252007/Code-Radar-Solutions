@@ -10,9 +10,9 @@ int main() {
     }
     
     for(int j=0;j<a/2;j++){
-        int temp = temp[j];
+        int tempVal = temp[j];
         temp[j]=temp[a-j-1];
-        temp[a-j-1]=temp;
+        temp[a-j-1]=tempVal;
     }
     int ispalindrome = 1;
     for(int k=0;k<a;k++){
