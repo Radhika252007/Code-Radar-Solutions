@@ -11,7 +11,7 @@ int main() {
     int b;
     scanf("%d",&b);
     for(int j=0;j<a;j++){
-        arr[j]=arr[j+b];
+        arr[j]=arr[j+b-1];
     }
     for(int k =0;k<a;k++){
         printf("%d\n",arr[k]);
