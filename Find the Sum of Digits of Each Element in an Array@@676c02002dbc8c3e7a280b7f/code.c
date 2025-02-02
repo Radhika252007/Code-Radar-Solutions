@@ -24,7 +24,6 @@ int sumofdigit(int a){
     while(a>0){
         sum = sum + a%10;
         a = a/10;
-        sum = sum + b;
     }
     return sum;
 }
