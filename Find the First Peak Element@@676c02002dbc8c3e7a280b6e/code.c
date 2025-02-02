@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main() {
     int a;
     scanf("%d",&a);
@@ -18,11 +17,13 @@ int main() {
         else if(j==0){
             if(arr[j]>arr[j+1]){
                 printf("%d",arr[j]);
+                break;
             }
         }
         else if(j==a-1){
             if(arr[j]>arr[j-1]){
                 printf("%d",arr[j]);
+                break;
             }
         }
         else{
