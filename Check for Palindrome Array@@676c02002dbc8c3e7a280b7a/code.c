@@ -10,13 +10,13 @@ int main() {
     }
     
     for(int j=0;j<(a/2);j++){
-        int temp = temp[i];
-        temp[i]=temp[a-i-1];
-        temp[a-i-1]=temp;
+        int temp = temp[j];
+        temp[j]=temp[a-j-1];
+        temp[a-j-1]=temp;
     }
     int ispalindrome = 1;
     for(int k=0;k<a;k++){
-    if(temp[i]!=arr[j]){
+    if(temp[k]!=arr[k]){
         ispalindrome=0;
         break;
     }}
