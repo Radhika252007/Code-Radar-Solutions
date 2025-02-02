@@ -12,7 +12,8 @@ int main() {
     for(int j=0;j<(a/2);j++){
         int firstVal = temp[i];
         int secondVal = temp[n-i-1];
-        firstVal = temp[n-i-1];
+        temp[n-i-1]=firstVal;
+        temp[i]=secondVal;
         secondVal= temp[i];
 
     }
