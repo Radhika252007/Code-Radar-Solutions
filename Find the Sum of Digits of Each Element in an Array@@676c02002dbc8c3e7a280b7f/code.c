@@ -19,13 +19,10 @@ int main() {
     return 0;
 }
 int sumofdigit(int a){
-    if(a==0){
-        return 0;
-    }
+    
     int sum = 0;
-    int b;
     while(a>0){
-        b = a%10;
+        sum = sum + a%10;
         a = a/10;
         sum = sum + b;
     }
