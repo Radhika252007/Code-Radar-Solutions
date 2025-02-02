@@ -8,6 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int leader = arr[a-1];
+    printf("%d",leader);
     for(int j= a-2;j>=0;j--){
         if(arr[j]>=leader){
             leader = arr[j];
