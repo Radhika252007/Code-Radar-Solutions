@@ -9,16 +9,16 @@ int main() {
     }
     
     for(int j=0;j<a;j++){
-        if(j>0 && j<a-1){
-        if((arr[j]>arr[j-1])&&(arr[j]>arr[j+1])){
-            printf("%d",arr[j]);
-            break;
-        }}
-        else if(j==0){
+        if(j==0){
             if(arr[j]>arr[j+1]){
                 printf("%d",arr[j]);
                 break;
             }
+        else if(j>0 && j<a-1){
+        if((arr[j]>arr[j-1])&&(arr[j]>arr[j+1])){
+            printf("%d",arr[j]);
+            break;
+        }}
         }
         else if(j==a-1){
             if(arr[j]>arr[j-1]){
