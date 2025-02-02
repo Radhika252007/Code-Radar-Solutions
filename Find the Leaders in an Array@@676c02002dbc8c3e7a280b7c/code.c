@@ -3,13 +3,13 @@
 int main() {
     int a;
     scanf("%d",&a);
-    int arr[a],result[a];
+    int arr[a];
     for(i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
     int leader = arr[a-1];
     for(int j= a-2;j>=0;j--){
-        if(arr[j]>leader){
+        if(arr[j]>=leader){
             leader = arr[j];
             printf("%d",arr[j]);
         }
