@@ -19,6 +19,9 @@ int main() {
     return 0;
 }
 int sumofdigit(int a){
+    if(a==0){
+        return 0;
+    }
     int sum = 0;
     int b;
     while(a>0){
