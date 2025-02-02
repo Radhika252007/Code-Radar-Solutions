@@ -9,7 +9,7 @@ int main() {
         temp[i]=arr[i];
     }
     
-    for(int j=0;j<(a/2);j++){
+    for(int j=0;j<a/2;j++){
         int temp = temp[j];
         temp[j]=temp[a-j-1];
         temp[a-j-1]=temp;
