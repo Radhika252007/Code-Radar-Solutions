@@ -22,7 +22,7 @@ int main() {
            }
            }
         }
-    }
+    
     for(int k=0;k<a-1;k++){
         for(int i=1;i<a;i++){
             if(arr[i]>arr[k]){
@@ -37,6 +37,6 @@ int main() {
             }
             }
         }
-    }
+    
     return 0;
 }
