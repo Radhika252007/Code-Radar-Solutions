@@ -23,7 +23,7 @@ int main() {
         else if(j>0 && j<a-1){
         if((arr[j]>arr[j-1])&&(arr[j]>arr[j+1])){
             printf("%d",arr[j]);
-            return 0;;
+            return 0;
         }}
         
         
