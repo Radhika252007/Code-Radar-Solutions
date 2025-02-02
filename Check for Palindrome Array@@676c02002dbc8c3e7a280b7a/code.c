@@ -10,15 +10,18 @@ int main() {
     }
     
     for(int j=0;j<(a/2);j++){
-        int firstVal = temp[i];
-        int secondVal = temp[n-i-1];
-        temp[n-i-1]=firstVal;
-        temp[i]=secondVal;
-
+        int temp = temp[i];
+        temp[i]=temp[a-i-1];
+        temp[a-i-1]=temp;
     }
-    if(temp[a]==arr[a]){
-        printf("YES");
-    }
+    int ispalindrome = 1;
+    for(int k=0;k<a;k++){
+    if(temp[i]!=arr[j]){
+        ispalindrome=0;
+        break;
+    }}
+    if(ispalindrome){
+        printf("YES");    }
     else{
         printf("NO");
     }
