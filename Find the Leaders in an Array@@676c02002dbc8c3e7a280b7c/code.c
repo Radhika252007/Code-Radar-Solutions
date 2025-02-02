@@ -11,7 +11,7 @@ int main() {
     for(int j= a-2;j>=0;j--){
         if(arr[j]>=leader){
             leader = arr[j];
-            printf("%d",arr[j]);
+            printf("%d ",arr[j]);
         }
     }
     return 0;
