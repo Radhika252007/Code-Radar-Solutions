@@ -13,7 +13,7 @@ int main() {
         result[j]=sumofdigit(arr[j]);
     }
     for(int i = 0;i<a;i++){
-        printf("%d",result[i]);
+        printf("%d ",result[i]);
     }
     return 0;
 }
