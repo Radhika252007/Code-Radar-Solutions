@@ -9,10 +9,24 @@ int main() {
         scanf("%d",&arr[i]);
     }
     
-    for(int j=1;j<a-1;j++){
+    for(int j=0;j<a;j++){
+        if(j>0 && j<a-1){
         if((arr[j]>arr[j-1])&&(arr[j]>arr[j+1])){
             printf("%d",arr[j]);
             break;
+        }}
+        else if(j==0){
+            if(arr[j]>arr[j+1]){
+                printf("%d",arr[j]);
+            }
+        }
+        else if(j==a-1){
+            if(arr[j]>arr[j-1]){
+                printf("%d",arr[j]);
+            }
+        }
+        else{
+            printf("%d",-1);
         }
     }
     return 0;
