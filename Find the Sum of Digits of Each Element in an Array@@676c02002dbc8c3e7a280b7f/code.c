@@ -22,7 +22,7 @@ int sumofdigit(int a){
     int b;
     while(a>0){
         b = a%10;
-        a = a/10
+        a = a/10;
         sum = sum + b;
     }
     return sum;
