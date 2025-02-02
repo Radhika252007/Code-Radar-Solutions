@@ -15,6 +15,7 @@ int main() {
     for(int i = 0;i<a;i++){
         printf("%d ",result[i]);
     }
+    printf("\n");
     return 0;
 }
 int sumofdigit(int a){
