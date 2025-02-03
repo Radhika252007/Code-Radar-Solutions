@@ -2,7 +2,7 @@
 
 int main() {
     int a;
-    scanf("5d",&a);
+    scanf("%d",&a);
     int arr[a];
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
