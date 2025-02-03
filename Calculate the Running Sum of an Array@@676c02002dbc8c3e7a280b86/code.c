@@ -7,16 +7,16 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int arr2[];
+    int result[];
     int count = 0;
     for(int i=0;i<a-1;i++){
         for(int j = 1;j<a;j++){
-            arr2[count]=arr[i]+arr[j];
+            result[count]=arr[i]+arr[j];
             count++;
         }
     }
     for(int k = 0;k<count-1;k++){
-        printf("%d ",arr[k]);
+        printf("%d ",result[k]);
     }
     return 0;
 }
