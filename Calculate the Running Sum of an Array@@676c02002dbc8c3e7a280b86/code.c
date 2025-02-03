@@ -15,7 +15,7 @@ int main(){
             result[count++]=arr[i]+arr[j];
         }
     }
-    for(int k = 0;k<count-1;k++){
+    for(int k = 0;k<count;k++){
         printf("%d ",result[k]);
     }
     return 0;
