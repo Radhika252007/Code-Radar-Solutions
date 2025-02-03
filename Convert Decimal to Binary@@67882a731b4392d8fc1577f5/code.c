@@ -17,7 +17,7 @@ int main() {
         i++;
     }
     if(b==0){
-        return 0;
+        printf("%d",0);
     }
     else{
         for(int j=i-1;j>=0;j--){
