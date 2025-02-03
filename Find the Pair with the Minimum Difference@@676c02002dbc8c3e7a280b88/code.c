@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int mindiff = 100;
+    int mindiff = 200;
     int diff;
     for(int j=0;j<a-1;j++){
         for(int k=j+1;k<a;k++){
@@ -28,11 +28,13 @@ int main() {
             if(arr[i]>arr[k]){
                 if(arr[i]-arr[k]==mindiff){
                     printf("%d %d",arr[k],arr[i]);
+                    break;
                 }
             }
             if(arr[k]>arr[i]){
                 if(arr[k]-arr[i]==mindiff){
                     printf("%d %d",arr[i],arr[k]);
+                    break;
                 }
             }
             }
