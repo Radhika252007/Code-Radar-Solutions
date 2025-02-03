@@ -7,15 +7,11 @@ int main(){
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int sum = arr[0];
-    int count = 0;
-    int result[count++] = sum;
-    for(int i=0;i<a-1;i++){
-        for(int j = 1;j<a;j++){
-            result[count++]=arr[i]+arr[j];
-        }
+    int result[0]=arr[0];
+    for(int i=1;i<a;i++){
+        result[i] = result[i-1]+arr[i];
     }
-    for(int k = 0;k<count;k++){
+    for(int k = 0;k<a;k++){
         printf("%d ",result[k]);
     }
     return 0;
