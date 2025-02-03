@@ -9,6 +9,9 @@ int main() {
     }
     int mindiff = 200;
     int diff;
+    if(a==1){
+        printf("%d",-1);
+    }
     for(int j=0;j<a-1;j++){
         for(int k=j+1;k<a;k++){
            if(arr[j]>arr[k]){
