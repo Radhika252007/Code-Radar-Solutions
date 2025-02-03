@@ -11,6 +11,7 @@ int main() {
             y++;
             j++;
         }
+        printf("\n");
     }
     return 0;
 }
