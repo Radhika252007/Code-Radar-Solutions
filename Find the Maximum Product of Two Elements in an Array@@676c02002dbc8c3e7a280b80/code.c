@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int maxproduct=1;
+    int maxproduct=0;
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
             if((arr[i]*arr[j])>maxproduct){
