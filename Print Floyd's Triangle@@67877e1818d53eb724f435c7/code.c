@@ -9,8 +9,8 @@ int main() {
         while(i>=j){
             printf("%d ",y);
             y++;
+            j++;
         }
-        j++;
     }
     return 0;
 }
