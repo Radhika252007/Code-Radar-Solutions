@@ -14,11 +14,18 @@ int main() {
         }
     }
     int second_max = arr[0];
+    int found = 0;
     for(int j=0;j<a;j++){
-        if((arr[j]>second_max) && (arr[j]<max)){
+        if((arr[j]>second_max) && (arr[j]<max)||(!found)){
             second_max = arr[j];
+            found = 1;
         }
     }
-    printf("%d",second_max);
+    if(!found){
+        printf("%d",-1);
+    }
+    else{
+        printf("%d",second_max);
+    }
     return 0;
 }
