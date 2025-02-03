@@ -2,7 +2,7 @@
 
 int main() {
     int a;
-    scanf("%d");
+    scanf("%d",&a);
     int arr[a];
     for(int i=0;i<a;i++){
         scanf("%d",&a);
@@ -13,7 +13,7 @@ int main() {
             max = arr[i];
         }
     }
-    int second_max =0;
+    int second_max = 0;
     for(int j=0;j<a;j++){
         if((arr[j]>second_max) && (arr[j]<max)){
             second_max = arr[j];
