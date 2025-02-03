@@ -21,6 +21,9 @@ int main() {
 int sumofdigit(int a){
     int sum = 0;
     while((a>0)||(a<0)){
+        if(a<0){
+            a = a*(-1);
+        }
         sum = sum + a%10;
         a = a/10;
     }
