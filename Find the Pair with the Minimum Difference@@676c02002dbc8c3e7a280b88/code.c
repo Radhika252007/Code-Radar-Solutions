@@ -27,13 +27,13 @@ int main() {
         for(int i=1;i<a;i++){
             if(arr[i]>arr[k]){
                 if(arr[i]-arr[k]==mindiff){
-                    printf("%d %d",arr[k],arr[i]);
+                    printf("%d %d\n",arr[k],arr[i]);
                     break;
                 }
             }
             if(arr[k]>arr[i]){
                 if(arr[k]-arr[i]==mindiff){
-                    printf("%d %d",arr[i],arr[k]);
+                    printf("%d %d\n",arr[i],arr[k]);
                     break;
                 }
             }
