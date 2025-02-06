@@ -2,10 +2,10 @@
 #include <string.h>
 
 int main() {
-    char ch[50],ch2[50];
+    char ch[100],ch2[50];
     fgets(ch,50,stdin);
     fgets(ch2,50,stdin);
-    char ch3[100]=strcat(ch,ch2);
-    puts(ch3);
+    
+    puts(strcat(ch,ch2));
     return 0;
 }
