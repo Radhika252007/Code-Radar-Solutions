@@ -9,7 +9,7 @@ int main() {
     }
     char str2[50];
     for(int i=0;i<length;i++){
-        str2[length-1]=str[i];
+        str2[length-i-1]=str[i];
     }
     printf("%s",str2);
     return 0;
