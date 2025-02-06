@@ -10,7 +10,7 @@ int main() {
         ch2[len-i-1]=ch[i];
     }
     int result = strcmp(ch,ch2);
-    if(result){
+    if(result==0){
         printf("Yes");
     }
     else{
