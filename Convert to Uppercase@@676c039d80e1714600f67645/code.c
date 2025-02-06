@@ -5,7 +5,9 @@ int main() {
     scanf("%s",&ch);
     int len = strlen(ch);
     for(int i=0;i<len;i++){
-        ch[i]=ch[i]-32;
+        if(ch[i]>='a' && ch[i]<'z'){
+            ch[i] = ch[i]-32;
+        }
     }
     printf("%s",ch);
     return 0;
