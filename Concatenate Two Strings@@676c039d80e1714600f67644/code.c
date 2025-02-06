@@ -6,6 +6,6 @@ int main() {
     fgets(ch,100,stdin);
     fgets(ch2,50,stdin);
     strcat(ch,ch2);
-    puts(ch);
+    printf("%s",ch);
     return 0;
 }
