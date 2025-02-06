@@ -4,8 +4,8 @@ int main() {
     char ch[50];
     scanf("%s",&ch);
     char b,c;
-    scanf("%c",&b);
-    scanf("%c",&c);
+    scanf(" %c",&b);
+    scanf(" %c",&c);
     int length = 0;
     while(ch[length]!='\0'){
         length++;
