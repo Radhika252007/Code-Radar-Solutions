@@ -3,8 +3,8 @@
 
 int main() {
     char ch[50],ch2[50];
-    scanf("%s",&ch);
-    scanf("%s",&ch2);
+    fgets(ch,50,stdin);
+    fgets(ch2,50,stdin);
     printf("%s",strcat(ch,ch2));
     return 0;
 }
