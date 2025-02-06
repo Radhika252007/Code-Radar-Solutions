@@ -2,7 +2,7 @@
 
 int main() {
     char ch[50];
-    scanf("%s",&ch);
+    fgets(ch,50,stdin);
     int length = 0;
     while(ch[length]!='\0'){
         length++;
