@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    int ch[50];
+    char ch[50];
     scanf("%s",&ch);
     char ch2[50];
     int len=strlen(ch);
