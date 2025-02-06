@@ -12,6 +12,6 @@ int main() {
             ch[i]=ch[i]+32;
         }
     }
-    printf("%s",ch);
+    puts(ch);
     return 0;
 }
