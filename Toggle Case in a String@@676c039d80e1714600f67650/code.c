@@ -8,10 +8,10 @@ int main() {
         if(ch[i]>='a'&&ch[i]<='z'){
             ch[i]=ch[i]-32;
         }
-        if(ch[i]>='A'&&ch[i]<='Z'){
+        else if(ch[i]>='A'&&ch[i]<='Z'){
             ch[i]=ch[i]+32;
         }
     }
-    puts(ch);
+    printf("%s",ch);
     return 0;
 }
