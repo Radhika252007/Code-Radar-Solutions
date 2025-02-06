@@ -5,7 +5,7 @@ int main() {
     char ch[100],ch2[50];
     fgets(ch,100,stdin);
     fgets(ch2,50,stdin);
-    
-    puts(strcat(ch,ch2));
+    strcat(ch,ch2);
+    puts(ch);
     return 0;
 }
