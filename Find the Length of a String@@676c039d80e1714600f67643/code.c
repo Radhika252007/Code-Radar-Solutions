@@ -4,7 +4,7 @@ int main() {
     char ch[50];
     scanf("%s",&ch);
     int length = 0;
-    for(int i =0;arr[i]!='\0';i++){
+    while(ch[length]!=0){
         length++;
     }
     printf("%d",length);
