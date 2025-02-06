@@ -2,7 +2,7 @@
 #include <string.h>
 int main() {
     char ch[50];
-    scanf("%s",&ch);
+    fgets(ch,50,stdin);
     int len = strlen(ch);
     for(int i=0;i<len;i++){
         if(ch[i]>='a' && ch[i]<'z'){
