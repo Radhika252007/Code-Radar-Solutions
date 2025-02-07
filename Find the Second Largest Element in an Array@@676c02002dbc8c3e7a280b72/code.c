@@ -13,7 +13,7 @@ int main() {
             max = arr[i];
         }
     }
-    int second_max = -1;
+    int second_max = -10000;
     for(int j=0;j<a;j++){
         if(arr[j]>0){
         if((arr[j]>second_max) && (arr[j]<max)){
@@ -21,12 +21,17 @@ int main() {
         }
     }
     else{
-        if((arr[j]<second_max)&&(arr[j]<max)){
+        if((arr[j]>second_max)&&(arr[j]<max)){
             second_max = arr[j];
         }
     }}
     
-    printf("%d",second_max);
+    if(second_max=-10000){
+        printf("%d",-1);
+    }
+    else{
+        printf("%d",second_max);
+    }
     
     return 0;
 }
