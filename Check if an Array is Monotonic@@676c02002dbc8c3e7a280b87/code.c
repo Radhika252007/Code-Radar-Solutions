@@ -7,22 +7,17 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int monotonic = 0;
+    int isIncreasing = 0,isDecreasing =0;
     for(int i=0;i<a-1;i++){
-        for(int j=1;j<a;j++){
-            if(arr[i]<=arr[j]){
-                monotonic=1;
-            }
+        if(arr[i]<arr[i+1]){
+            isIncreasing=1;
+        }
+        if(arr[i]>arr[i+1]){
+            isDecreasing=1;
         }
     }
-    for(int i=0;i<a-1;i++){
-        for(int j=1;j<a;j++){
-            if(arr[i]>=arr[j]){
-                monotonic=1;
-            }
-        }
-    }
-    if((monotonic)||(a==1)){
+
+    if((isDecreasing)||(a==1)||(isIncreasing)){
         printf("YES");
     }
     else{
