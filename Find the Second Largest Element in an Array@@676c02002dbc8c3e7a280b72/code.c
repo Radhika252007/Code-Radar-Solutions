@@ -20,7 +20,7 @@ int main() {
         }
     }
     
-    if(second_max=-10000){
+    if(second_max==-10000){
         printf("%d",-1);
     }
     else{
