@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<len-1;i++){
         for(int j=1;j<len;j++){
             if(ch[i]!=ch[j]){
-                printf("%c",arr[i]);
+                printf("%c",ch[i]);
                 return 0;
             }
         }
