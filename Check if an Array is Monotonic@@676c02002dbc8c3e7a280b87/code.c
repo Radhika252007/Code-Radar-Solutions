@@ -13,6 +13,10 @@ int main() {
             if(arr[i]<=arr[j]){
                 monotonic=1;
             }
+        }
+    }
+    for(int i=0;j<a;j++){
+        for(int j=0;j<a;j++){
             if(arr[i]>=arr[j]){
                 monotonic=1;
             }
