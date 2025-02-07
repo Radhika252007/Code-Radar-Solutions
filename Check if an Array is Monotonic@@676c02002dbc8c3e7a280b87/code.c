@@ -7,13 +7,13 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int isIncreasing = 0,isDecreasing =0;
+    int isIncreasing = 1,isDecreasing =1;
     for(int i=0;i<a-1;i++){
         if(arr[i]<=arr[i+1]){
-            isIncreasing=1;
+            isDecreasing=0;
         }
         if(arr[i]>=arr[i+1]){
-            isDecreasing=1;
+            isIncreasing=0;
         }
     }
 
