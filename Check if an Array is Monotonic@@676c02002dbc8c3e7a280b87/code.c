@@ -9,10 +9,10 @@ int main() {
     }
     int isIncreasing = 0,isDecreasing =0;
     for(int i=0;i<a-1;i++){
-        if(arr[i]<arr[i+1]){
+        if(arr[i]<=arr[i+1]){
             isIncreasing=1;
         }
-        if(arr[i]>arr[i+1]){
+        if(arr[i]>=arr[i+1]){
             isDecreasing=1;
         }
     }
