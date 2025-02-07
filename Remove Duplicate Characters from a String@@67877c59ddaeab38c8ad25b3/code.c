@@ -8,7 +8,7 @@ int main() {
         for(int j=1;j<len;j++){
             if(ch[i]==ch[j]){
                 if(j==len-1){
-                    ch[j]=" ";
+                    ch[j]=' ';
                 }
                 else{
                     ch[j]=ch[j+1];
