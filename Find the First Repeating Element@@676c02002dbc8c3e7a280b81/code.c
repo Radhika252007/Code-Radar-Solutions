@@ -8,15 +8,15 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    for(int j=0;j<a;j++){
-    int repeating = arr[j];
+    
+    int repeating = arr[0];
     for(int i=1;i<a;i++){
         if(arr[i]==repeating){
-            printf("%d",repeating);
+            printf("%d\n",repeating);
             break;
         }
         }
+
     
-    }
     return 0;
 }
