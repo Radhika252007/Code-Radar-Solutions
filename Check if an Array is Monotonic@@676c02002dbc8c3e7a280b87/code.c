@@ -10,7 +10,7 @@ int main() {
     int monotonic = 0;
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
-            if((arr[i]<arr[j])||(arr[i]>arr[j])){
+            if((arr[i]<=arr[j])||(arr[i]>=arr[j])){
                 monotonic=1;
             }
         }
