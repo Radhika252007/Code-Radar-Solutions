@@ -9,6 +9,7 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
+    int arr1[0] = -1;
     int count =0;
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
@@ -18,12 +19,9 @@ int main() {
             }
         }
         }
-    if(arr1[0]>100000||arr1[0]< -100000){
-        arr1[0]=-1;
-    }
-    else{
-        printf("%d",arr1[0]);
-    }
+    
+    printf("%d",arr1[0]);
+    
 
     
     return 0;
