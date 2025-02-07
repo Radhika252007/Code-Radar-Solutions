@@ -10,7 +10,7 @@ int main() {
     int monotonic = 0;
     if(a==1){
         printf("YES");
-        break;
+        return;
     }
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
