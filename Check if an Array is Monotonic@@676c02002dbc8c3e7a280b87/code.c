@@ -15,8 +15,8 @@ int main() {
             }
         }
     }
-    for(int i=0;j<a;j++){
-        for(int j=0;j<a;j++){
+    for(int i=0;i<a-1;i++){
+        for(int j=1;j<a;j++){
             if(arr[i]>=arr[j]){
                 monotonic=1;
             }
