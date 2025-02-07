@@ -5,7 +5,7 @@ int main() {
     fgets(ch,50,stdin);
     int len = strlen(ch);
     for(int i=0;i<len-1;i++){
-        for(int j=0;j<len;j++){
+        for(int j=1;j<len;j++){
             if(ch[i]==ch[j]){
                 if(j==len-1){
                     ch[j]=" ";
