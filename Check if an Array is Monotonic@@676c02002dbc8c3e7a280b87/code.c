@@ -8,6 +8,9 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int monotonic = 0;
+    if(a==1){
+        printf("YES");
+    }
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
             if((arr[i]<=arr[j])||(arr[i]>=arr[j])){
