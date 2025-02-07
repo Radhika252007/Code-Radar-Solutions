@@ -15,16 +15,10 @@ int main() {
     }
     int second_max = -10000;
     for(int j=0;j<a;j++){
-        if(arr[j]>0){
         if((arr[j]>second_max) && (arr[j]<max)){
             second_max = arr[j];
         }
     }
-    else{
-        if((arr[j]>second_max)&&(arr[j]<max)){
-            second_max = arr[j];
-        }
-    }}
     
     if(second_max=-10000){
         printf("%d",-1);
