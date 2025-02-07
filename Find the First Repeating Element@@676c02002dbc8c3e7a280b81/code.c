@@ -12,8 +12,8 @@ int main() {
     int count =0;
     for(int i=0;i<a-1;i++){
         for(int j=1;j<a;j++){
-            if(arr[i]==arr[j]&&i!=k){
-                arr1[count]=arr[k];
+            if(arr[i]==arr[j]&&i!=j){
+                arr1[count]=arr[i];
                 count++;
             }
         }
