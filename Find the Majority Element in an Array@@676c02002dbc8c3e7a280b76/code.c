@@ -24,10 +24,13 @@ int main() {
     int max = 0;
     for(int i=0;i<a;i++){
         if(freq[i]>a/2){
-            max = freq[i];
-            k =i;
+           printf("%d",arr[i]);
+           break;
+        }
+        else{
+            printf("%d",-1);
         }
     }
-    printf("%d",arr[k]);
+    
     return 0;
 }
