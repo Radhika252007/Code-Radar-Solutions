@@ -23,7 +23,7 @@ int main() {
     int k=0;
     int max = 0;
     for(int i=0;i<a;i++){
-        if(freq[i]>(a/2)){
+        if(freq[i]>a/2){
             max = freq[i];
             k =i;
         }
