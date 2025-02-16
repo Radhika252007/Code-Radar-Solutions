@@ -3,11 +3,7 @@
 
 int main() {
     int a,b,i;
-    int c= 1;
     scanf("%d %d",&a,&b);
-    for(i=0;i<b;i++){
-        c = c*2;
-    }
-    printf("%d",a|c);
+    printf("%d",a|(1<<b));
     return 0;
 }
