@@ -34,5 +34,8 @@ int main() {
             printf("%d",(num>>i)&1);
         }
     }
+    if(!flag){
+        printf("%d",0);
+    }
     return 0;
 }
