@@ -31,7 +31,7 @@ int main() {
             flag=1;
         }
         if(flag){
-            printf("%d",num&(1<<i));
+            printf("%d",(num>>i)&1);
         }
     }
     return 0;
