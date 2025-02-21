@@ -17,6 +17,7 @@ int main() {
             ch[j++]=ch[a];
         }
     }
+    ch[j]='\0';
     printf("%s",ch);
     return 0;
 }
