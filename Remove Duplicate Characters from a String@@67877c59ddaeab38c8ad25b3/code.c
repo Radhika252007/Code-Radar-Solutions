@@ -2,18 +2,19 @@
 #include <string.h>
 int main() {
     char ch[50];
+    int j=0;
     fgets(ch,50,stdin);
     int len = strlen(ch);
-    for(int i=0;i<len-1;i++){
-        for(int j=1;j<len;j++){
+    for(int i=0;i<len;i++){
+        for(int j=i+1;j<len;j++){
             if(ch[i]==ch[j]){
-                if(j==len-1){
-                    ch[j]=' ';
-                }
-                else{
-                    ch[j]=ch[j+1];
-                }
+                ch[j]='0';
             }
+            }
+        }
+    for(int i=0;i<len;i++){
+        if(ch[i]!='0'){
+            ch[j++]=ch[i];
         }
     }
     printf("%s",ch);
