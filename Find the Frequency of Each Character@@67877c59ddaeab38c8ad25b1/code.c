@@ -6,7 +6,7 @@ int main(){
     fgets(str,1000,stdin);
     int len = strlen(str);
     for(int i=0;i<len;i++){
-        int count =0;
+        int count =1;
         for(int j=i+1;j<len;j++){
             if((str[i]==str[j])&&(str[i]!='0')&&(i!=j)){
                 str[j]='0';
@@ -14,7 +14,7 @@ int main(){
             }
         }
         printf("%c: %d\n",str[i],count);
-        count =0;
+        count =1;
     }
     return 0;
 }
