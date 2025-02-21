@@ -13,7 +13,8 @@ int main(){
                 count++;
             }
         }
-        printf("%c: %d\n",str[i],count);
+        if(str[i]!='0'){
+        printf("%c: %d\n",str[i],count);}
         count =1;
     }
     return 0;
