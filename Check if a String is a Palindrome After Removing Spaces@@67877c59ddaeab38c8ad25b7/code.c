@@ -16,7 +16,7 @@ int main(){
     for(int i=0;str[i]!='\0';i++){
         str[j-i-1]=str[i];
     }
-    if(temp==str){
+    if(strcmp(temp,str)==0){
         printf("Yes");
     }
     else{
