@@ -7,7 +7,7 @@ int main(){
     while(str[i]==' ')i++;
     while(str[j++]=str[i++]);
     int count = 1;
-    for(int k=0;str[k]<='\0';k++){
+    for(int k=0;str[k]!='\0';k++){
         if(str[k]==' '){
             count++;
         }
