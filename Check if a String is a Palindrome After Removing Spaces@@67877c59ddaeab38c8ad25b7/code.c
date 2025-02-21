@@ -11,7 +11,8 @@ int main(){
         }
     }
     str[j]='\0';
-    char temp = str[j]
+    char temp[1000];
+    strcpy(temp,str);
     for(int i=0;str[i]!='\0';i++){
         str[j-i-1]=str[i];
     }
