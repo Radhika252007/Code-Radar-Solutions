@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(){
     char str[1000];
-    fgets(str,1000,stdio);
+    fgets(str,1000,stdin);
     int i=0,j=0;
     while(str[i]==' ')i++;
     while(str[j++]=str[i++]);
