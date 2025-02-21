@@ -6,15 +6,15 @@ int main() {
     fgets(ch,50,stdin);
     int len = strlen(ch);
     for(int i=0;i<len;i++){
-        for(int j=i+1;j<len;j++){
-            if((ch[i]==ch[j])&&i!=j){
-                ch[j]='0';
+        for(int k=i+1;k<len;k++){
+            if((ch[i]==ch[k])&&i!=k){
+                ch[k]='0';
             }
             }
         }
-    for(int i=0;i<len;i++){
-        if(ch[i]!='0'){
-            ch[j++]=ch[i];
+    for(int a=0;a<len;a++){
+        if(ch[a]!='0'){
+            ch[j++]=ch[a];
         }
     }
     printf("%s",ch);
