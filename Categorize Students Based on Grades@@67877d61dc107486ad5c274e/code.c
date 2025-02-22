@@ -16,13 +16,13 @@ int main(){
     }
     for(int j=0;j<N;j++){
         if(school[j].marks>=85){
-            grade[j] = 'A';
+            school[j].grade = 'A';
         }
         else if((school[j].marks<85)&&(school[j].marks>=70)){
-            grade[j] = 'B';
+            school[j].grade  = 'B';
         }
         else{
-            grade[j] = 'C';
+            school[j].grade  = 'C';
         }
     }
     for(int k=0;k<N;k++){
