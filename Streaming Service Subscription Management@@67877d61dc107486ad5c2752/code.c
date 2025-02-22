@@ -28,6 +28,6 @@ int main(){
             rev2 += revenue[j].price;
         }
     }
-    printf("Basic: %d Users, Revenue: %.2f, Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f", basic, rev1, stand, rev2, premium, rev3);
+    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f", basic, rev1, stand, rev2, premium, rev3);
     return 0;
 }
