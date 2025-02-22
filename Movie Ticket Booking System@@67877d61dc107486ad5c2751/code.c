@@ -13,12 +13,12 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%s %s %f",&revenue[i].movie,&revenue[i].type,&revenue[i].price);
     }
-    float stand = 0, premium = 0; vip=0;
+    float stand = 0, premium = 0, vip=0;
     for(int j=0;j<N;j++){
         if(strcmp(revenue[j].type,"Standard")==0){
             stand += revenue[j].price;
         }
-        else if(strcmp(revenue[j].type,"Premiun")==0){
+        else if(strcmp(revenue[j].type,"Premium")==0){
             premium+= revenue[j].price;
         }
         else{
@@ -26,4 +26,5 @@ int main(){
         }
     }
     printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",stand,premium,vip);
+    return 0;
 }
