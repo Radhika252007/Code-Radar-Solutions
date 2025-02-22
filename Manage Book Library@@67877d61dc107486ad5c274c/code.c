@@ -14,9 +14,9 @@ int main(){
     }
     int threshold;
     scanf("%d",&threshold);
+    printf("Books above price %.2f",threshold);
     for(int k=0;k<N;k++){
         if(auth[k].price > threshold){
-            printf("Books above price %.2f:\n",threshold);
             printf("Title: %s, Author: %s, Price: %.2f\n",auth[k].book,auth[k].author,auth[k].price);
         }
     }
