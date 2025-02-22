@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&N);
     struct Book auth[N];
     for(int j=0;j<N;j++){
-        scanf("%s %s %d",&auth[j].book,&auth.author[j],&auth.price[j]);
+        scanf("%s %s %d",&auth[j].book,&auth[j].author,&auth[j].price);
     }
     int threshold;
     scanf("%d",&threshold);
