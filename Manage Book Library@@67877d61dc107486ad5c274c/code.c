@@ -13,7 +13,7 @@ int main(){
         scanf("%s %s %f",&auth[j].book,&auth[j].author,&auth[j].price);
     }
     float threshold;
-    scanf("%d",&threshold);
+    scanf("%f",&threshold);
     printf("Books above price %.2f:\n",threshold);
     for(int k=0;k<N;k++){
         if(auth[k].price > threshold){
