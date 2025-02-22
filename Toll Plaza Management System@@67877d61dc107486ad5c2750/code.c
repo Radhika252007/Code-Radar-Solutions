@@ -15,10 +15,10 @@ int main(){
     }
     float cars=0,trucks=0,bikes=0;
     for(int k=0;k<N;k++){
-        if(strcmp(toll[k].type,"Car")){
+        if(strcmp(toll[k].type,"Car")==0){
             cars+= toll[k].price;
         }
-        else if(strcmp(toll[k].type,"Truck")){
+        else if(strcmp(toll[k].type,"Truck")==0){
             trucks+= toll[k].price;
         }
         else{
