@@ -10,7 +10,7 @@ int main(){
     scanf("%d", &N);
     struct Subscription revenue[N];
     for(int i = 0; i < N; i++){
-        scanf("%s %s %f", revenue[i].name, revenue[i].type, &revenue[i].price);
+        scanf("%s %s %f", &revenue[i].name, &revenue[i].type, &revenue[i].price);
     }
     int basic = 0, premium = 0, stand = 0;
     float rev1 = 0, rev2 = 0, rev3 = 0;
