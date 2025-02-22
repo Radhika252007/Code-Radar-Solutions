@@ -10,14 +10,14 @@ int main(){
     scanf("%d",&N);
     struct Book auth[N];
     for(int j=0;j<N;j++){
-        scanf("%s %s %d",&auth[j].book,&auth[j].author,&auth[j].price);
+        scanf("%s %s %f",&auth[j].book,&auth[j].author,&auth[j].price);
     }
-    int threshold;
+    float threshold;
     scanf("%d",&threshold);
-    printf("Books above price %.2f:\n",(float)threshold);
+    printf("Books above price %.2f:\n",threshold);
     for(int k=0;k<N;k++){
         if(auth[k].price > threshold){
-            printf("Title: %s, Author: %s, Price: %.2f\n",auth[k].book,auth[k].author,(float)auth[k].price);
+            printf("Title: %s, Author: %s, Price: %.2f\n",auth[k].book,auth[k].author,auth[k].price);
         }
     }
     return 0;
