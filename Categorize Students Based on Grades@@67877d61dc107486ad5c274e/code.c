@@ -26,7 +26,7 @@ int main(){
         }
     }
     for(int k=0;k<N;k++){
-        printf("Roll Number: %d, Name: %s, Grade: %c\n",school[k].roll,school[k].name;school[k].grade);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n",school[k].roll,school[k].name,school[k].grade);
     }
     return 0;
 }
