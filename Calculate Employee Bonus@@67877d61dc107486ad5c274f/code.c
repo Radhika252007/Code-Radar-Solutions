@@ -22,6 +22,6 @@ int main(){
         }
     }
     for(int k=0;k<N;k++){
-        printf("Employee ID: %d, Name: %s, Bouns: %.2f\n",bonus[k].id,bonus[k].name,bonus[k].incr);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",bonus[k].id,bonus[k].name,bonus[k].incr);
     }
 }
