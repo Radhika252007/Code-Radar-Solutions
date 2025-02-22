@@ -15,4 +15,5 @@ int main(){
     for(int j=0;j<N;j++){
         printf("Roll Number: %d, Name: %s, Marks: %.2f\n",school[j].roll,school[j].name,school[j].marks);
     }
+    return 0;
 }
