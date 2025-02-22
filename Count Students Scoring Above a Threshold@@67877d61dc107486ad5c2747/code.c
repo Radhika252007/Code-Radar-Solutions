@@ -16,7 +16,7 @@ int main(){
     scanf("%f",&threshold);
     int count = 0;
     for(int j=0;j<N;j++){
-        if(school[j].roll>threshold){
+        if(school[j].marks>threshold){
             count++;
         }
     }
