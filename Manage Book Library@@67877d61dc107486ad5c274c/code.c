@@ -19,4 +19,5 @@ int main(){
             printf("Title: %s, Author: %s, Price: %.2f\n",auth[k].book,auth[k].author,auth[k].price);
         }
     }
+    return 0;
 }
