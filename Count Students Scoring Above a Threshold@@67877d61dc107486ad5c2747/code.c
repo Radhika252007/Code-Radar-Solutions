@@ -16,7 +16,9 @@ int main(){
     scanf("%f",&threshold);
     int count = 0;
     for(int j=0;j<N;j++){
-        if(school[j].roll>threshold)count++;
+        if(school[j].roll>threshold){
+            count++;
+        }
     }
     printf("Count of students scoring above %.2f: %d",threshold,count);
     return 0;
