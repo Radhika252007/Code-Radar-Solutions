@@ -26,7 +26,7 @@ int main(){
         }
     }
     for(int k=0;k<N;k++){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",sort[k].roll,sort[k].name,sort[k].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",sort[k].roll,sort[k].name,sort[k].marks);
     }
 
 }
