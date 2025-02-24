@@ -9,9 +9,10 @@ int main(){
     for(int i=0;i<7;i++){
         scanf("%s %f",&average[i].day,&average[i].temp);
     }
-    float avg=0;
+    float sum=0;
     for(int j=0;j<7;j++){
-        avg += average[j].temp;
+        sum += average[j].temp;
     }
+    float avg = sum/7.0;
     printf("Average Temperature: %.2f",avg);
 }
