@@ -9,7 +9,7 @@ int main(){
             count++;
         }
     }
-    if(str[0]!='\0'&& str[0]!=' ')count++;
+    // if(str[0]!='\0'&& str[0]!=' ')count++;
     printf("%d",count);
     return 0;
 }
