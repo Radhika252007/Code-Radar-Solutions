@@ -7,7 +7,7 @@ int main(){
     int len = strlen(ch);
     for(int k=0;k<len;k++){
         if(ch[k]>='A'&&ch[k]<='Z'){
-            ch[i]+=32;
+            ch[k]+=32;
         }
     }
     int j=0;
