@@ -6,9 +6,9 @@ int main(){
     fgets(ch,200,stdin);
     int len = strlen(ch);
     for(int k=0;k<len;k++){
-        if(ch[k]>='A'&&ch[k]<='Z'{
+        if(ch[k]>='A'&&ch[k]<='Z'){
             ch[i]+=32;
-        })
+        }
     }
     int j=0;
     for(int i=0;i < len;i++){
