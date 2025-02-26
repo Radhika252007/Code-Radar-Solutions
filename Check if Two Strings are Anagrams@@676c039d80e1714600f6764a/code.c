@@ -23,8 +23,8 @@ int main(){
         printf("No");
         return 0;
     }
-    sort(&ch);
-    sort(&ch2);
+    sort(ch);
+    sort(ch2);
     if(strcmp(ch,ch2)==0){
         printf("Yes");
     }
