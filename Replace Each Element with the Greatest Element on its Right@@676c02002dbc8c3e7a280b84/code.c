@@ -13,7 +13,9 @@ int main() {
             arr[i]=max;
         }
         else{
-            max =arr[i];
+            int temp = arr[i];
+            arr[i] =max;
+            max =temp;
         }
     }
     arr[a-1]=-1;
