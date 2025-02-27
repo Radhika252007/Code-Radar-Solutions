@@ -16,7 +16,7 @@ int main(){
             freq[index]++;
         }
     }
-    for(int i=0;i<index;i++){
+    for(int i=0;i<26;i++){
         if(freq[i]!=1){
             printf("No");
             return 0;
