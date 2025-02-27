@@ -13,8 +13,9 @@ int main(){
             }}
             if(isUnique){
                 printf("%c",ch[i]);
-                break;
+                return 0;
             }
             
         }
+        printf("-");
     }
