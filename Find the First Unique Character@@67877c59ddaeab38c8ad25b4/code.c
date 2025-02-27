@@ -5,8 +5,8 @@ int main(){
     char ch[300];
     scanf("%s",&ch);
     int len = strlen(ch);
-    int isUnique = 1;
     for(int i=0;i<len;i++){
+    int isUnique = 1;
         for(int j=0;j<len;j++){
             if(i!=j&&ch[i]==ch[j]){
                 isUnique=0;
