@@ -7,7 +7,7 @@ int main(){
     int len = strlen(ch);
     for(int i=0;i<len-1;i++){
         int isUnique = 1;
-        for(j=i+1;j<len;j++){
+        for(int j=i+1;j<len;j++){
             if(ch[i]==ch[j]){
                 isUnique=0;
             }}
