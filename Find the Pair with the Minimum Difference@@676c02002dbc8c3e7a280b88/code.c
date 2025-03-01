@@ -23,7 +23,7 @@ int main() {
     }
     sort(arr,a);
     int num1,num2,mindiff = 2000;
-    for(int i=0;i<a;i++){
+    for(int i=0;i<a-1;i++){
         if(arr[i+1]-arr[i]<mindiff){
             mindiff = arr[i+1]-arr[i];
             num1 = arr[i];
