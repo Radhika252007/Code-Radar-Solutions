@@ -1,5 +1,15 @@
 #include <stdio.h>
-
+void sort(int arr[],n){
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-i-1;j++){
+            if(arr[i]>arr[j]){
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = arr[j];
+            }
+        }
+    }
+}
 int main() {
     int a;
     scanf("%d",&a);
@@ -7,47 +17,18 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int mindiff = 200;
-    int diff;
-    if(a==1){
-        printf("%d",-1);
+    sort(arr,a);
+    int num1,num2,mindiff = 2000;
+    for(int i=0;i<a-1;i++){
+        for(int j=i+1;j<a;j++){
+            if(arr[j]-arr[i]<mindiff){
+                mindiff = arr[j]-arr[i];
+                num1 = arr[i];
+                num2 = arr[j];
+            }
+        }
     }
-    for(int j=0;j<a-1;j++){
-        for(int k=j+1;k<a;k++){
-           if(arr[j]>arr[k]){
-            diff = arr[j]-arr[k];
-           }
-           else{
-            diff = arr[k]-arr[j];
-           }
-           if(diff<mindiff){
-            mindiff=diff;
-           }
-           }
-        }
-    
-    for(int k=0;k<a-1;k++){
-        for(int i=1;i<a;i++){
-            if(arr[i]>arr[k]){
-                if(arr[i]-arr[k]==mindiff){
-                    printf("%d %d\n",arr[k],arr[i]);
-                    return 0;
-                }
-            }
-            else if(arr[k]>arr[i]){
-                if(arr[k]-arr[i]==mindiff){
-                    printf("%d %d\n",arr[i],arr[k]);
-                    return 0;
-                }
-            }
-            else{
-                if(arr[k]-arr[i]==mindiff){
-                    printf("%d %d\n",arr[i],arr[k]);
-                    return 0;
-                }
-            }
-            }
-        }
+    printf("%d %d\n",num1,num2);
     
     return 0;
 }
