@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&b);
     for(int i=0;i<a-1;i++){
         for(int j=1+i;j<a;j++){
-            if(arr[i]+arr[j]==b){
+            if(arr[i]+arr[j]==b && arr[i]!=arr[j]){
                 printf("%d %d\n",arr[i],arr[j]);
                 continue;
             }
