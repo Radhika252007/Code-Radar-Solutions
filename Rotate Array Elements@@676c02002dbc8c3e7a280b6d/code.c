@@ -8,13 +8,17 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int b;
-    scanf("%d",&b);
-    for(int j=0;j<a;j++){
-        arr[j+b]=arr[j];
+    int rotate;
+    scanf("%d",&rotate);
+    for(int j=0;j<rotate;j++){
+        int temp=arr[a-1];
+        for(int i=a-2;i>=0;i++){
+            arr[i+1]=arr[i];
+        }
+        arr[0]=temp;
     }
-    for(int k =0;k<a;k++){
-        printf("%d\n",arr[k]);
+    for(int i=0;i<a;i++){
+        printf("%d\n",arr[i]);
     }
     return 0;
 }
