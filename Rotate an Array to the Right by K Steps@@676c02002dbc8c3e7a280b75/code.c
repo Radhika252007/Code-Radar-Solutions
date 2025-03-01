@@ -8,6 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int rotate;
+    scanf("%d",&rotate);
     for(int j=0;j<rotate;j++){
         int temp = arr[a-1];
         for(int i = a-2;i>=0;i--){
