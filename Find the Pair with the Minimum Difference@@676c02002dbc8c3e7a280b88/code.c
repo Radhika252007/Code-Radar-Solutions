@@ -1,5 +1,5 @@
 #include <stdio.h>
-void sort(int arr[],n){
+void sort(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[i]>arr[j]){
@@ -16,6 +16,10 @@ int main() {
     int arr[a];
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
+    }
+    if(a==1){
+        printf("%d",-1);
+        return 0;
     }
     sort(arr,a);
     int num1,num2,mindiff = 2000;
