@@ -31,13 +31,13 @@ int main() {
             if(arr[i]>arr[k]){
                 if(arr[i]-arr[k]==mindiff){
                     printf("%d %d\n",arr[k],arr[i]);
-                    break;
+                    return 0;
                 }
             }
             if(arr[k]>arr[i]){
                 if(arr[k]-arr[i]==mindiff){
                     printf("%d %d\n",arr[i],arr[k]);
-                    break;
+                    return 0;
                 }
             }
             }
