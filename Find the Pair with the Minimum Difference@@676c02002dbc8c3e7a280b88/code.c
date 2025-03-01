@@ -34,7 +34,13 @@ int main() {
                     return 0;
                 }
             }
-            if(arr[k]>arr[i]){
+            else if(arr[k]>arr[i]){
+                if(arr[k]-arr[i]==mindiff){
+                    printf("%d %d\n",arr[i],arr[k]);
+                    return 0;
+                }
+            }
+            else{
                 if(arr[k]-arr[i]==mindiff){
                     printf("%d %d\n",arr[i],arr[k]);
                     return 0;
