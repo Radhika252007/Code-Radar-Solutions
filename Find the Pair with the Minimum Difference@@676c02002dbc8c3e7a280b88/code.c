@@ -3,9 +3,9 @@ void sort(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j+1]>arr[j]){
-                int temp = arr[j+1];
+                int temp = arr[j];
                 arr[j] = arr[j+1];
-                arr[j+1] = arr[j];
+                arr[j+1] = temp;
             }
         }
     }
@@ -27,7 +27,7 @@ int main() {
         if(arr[i+1]-arr[i]<mindiff){
             mindiff = arr[i+1]-arr[i];
             num1 = arr[i];
-            num2=arr[i+1];
+            num2 = arr[i+1];
         }
     }
     printf("%d %d\n",num1,num2);
