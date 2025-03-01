@@ -23,13 +23,11 @@ int main() {
     }
     sort(arr,a);
     int num1,num2,mindiff = 2000;
-    for(int i=0;i<a-1;i++){
-        for(int j=i+1;j<a;j++){
-            if(arr[j]-arr[i]<mindiff){
-                mindiff = arr[j]-arr[i];
-                num1 = arr[i];
-                num2 = arr[j];
-            }
+    for(int i=0;i<a;i++){
+        if(arr[i+1]-arr[i]<mindiff){
+            mindiff = arr[i+1]-arr[i];
+            num1 = arr[i];
+            num2=arr[i+1];
         }
     }
     printf("%d %d\n",num1,num2);
