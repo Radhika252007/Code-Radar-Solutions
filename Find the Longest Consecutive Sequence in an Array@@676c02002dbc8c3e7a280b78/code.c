@@ -19,7 +19,7 @@ int main(){
     }
     sort(arr,N);
     int count = 1;
-    max_count = 0;
+    int max_count = 0;
     for(int i=1;i<N;i++){
         if((arr[i]==arr[i-1]+1)&&(arr[i]!=arr[i-1])){
             count++;
