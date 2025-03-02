@@ -18,7 +18,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     sort(arr,N);
-    int count = 0;
+    int count = 1;
     // for(int i=arr[0];;i++){
     //     int present = 0;
     //     for(int j=0;j<N;j++){
