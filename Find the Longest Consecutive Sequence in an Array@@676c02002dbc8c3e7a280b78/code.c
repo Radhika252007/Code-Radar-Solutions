@@ -18,21 +18,20 @@ int main(){
         scanf("%d",&arr[i]);
     }
     sort(arr,N);
-    int count = 1;
-    int max_count = 0;
-    for(int i=1;i<N;i++){
-        if((arr[i]==arr[i-1]+1)){
-            count++;
-        }
-        else if(arr[i]!=arr[i-1]){
-            if(max_count<count){
-                max_count=count;
+    int count = 0;
+    for(int i=arr[0];;i++){
+        int present = 0;
+        for(int j=0;j<N;j++){
+            if((arr[j]==i)&&(arr[j]!=arr[j+1])){
+                present=1;
+                count++;
             }
-            count = 1;
         }
-        
+        if(!(present)){
+            printf("%d",count);
+            break;
+        }
     }
-    printf("%d",max_count);
     return 0;
     
 }
