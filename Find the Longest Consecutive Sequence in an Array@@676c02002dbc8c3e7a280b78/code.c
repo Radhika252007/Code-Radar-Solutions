@@ -23,7 +23,7 @@ int main(){
     for(int i=arr[0];;i++){
         int present = 0;
         for(int j=0;j<N;j++){
-            if(arr[j]==i){
+            if((arr[j]==i)&&(arr[j]!=arr[j+1])){
                 present=1;
                 count++;
             }
