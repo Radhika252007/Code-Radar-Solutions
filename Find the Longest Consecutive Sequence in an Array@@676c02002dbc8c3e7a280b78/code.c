@@ -21,13 +21,13 @@ int main(){
     int count = 1;
     int max_count = 0;
     for(int i=1;i<N;i++){
-        if((arr[i]==arr[i-1]+1)&&(arr[i]!=arr[i-1])){
+        if((arr[i]==arr[i-1]+1)){
             count++;
         }
-        if(count>max_count){
-            max_count=count;
-        }
-        if((arr[i]!=arr[i-1]+1)&&(arr[i]!=arr[i-1])){
+        else if(arr[i]!=arr[i-1]){
+            if(max_count<count){
+                max_count=count;
+            }
             count = 1;
         }
         
