@@ -14,7 +14,7 @@ int main(){
                 present=1;
             }
         }
-        if!(present){
+        if(!(present)){
             printf("%d",i);
             break;
         }
