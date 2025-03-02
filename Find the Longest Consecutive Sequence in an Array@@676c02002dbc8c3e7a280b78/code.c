@@ -19,15 +19,20 @@ int main(){
         scanf("%d",&arr[i]);
     }
     sort(arr,N);
-    
+    int count = 0;
     for(int i=arr[0];;i++){
-        int count = 0;
         int present = 0;
         for(int j=0;j<N;j++){
             if(arr[j]==i){
+                present=1;
                 count++;
             }
         }
+        if(!(present)){
+            printf("%d",count);
+            break;
+        }
     }
+    
     
 }
