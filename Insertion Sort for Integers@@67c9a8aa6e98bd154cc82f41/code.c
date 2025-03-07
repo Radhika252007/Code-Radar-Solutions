@@ -1,5 +1,5 @@
 // Your code here...
-void isertionSort(int arr[],int n){
+void insertionSort(int arr[],int n){
     for(int i=1;i<n;i++){
         int curr = arr[i];
         int prev = i-1;
