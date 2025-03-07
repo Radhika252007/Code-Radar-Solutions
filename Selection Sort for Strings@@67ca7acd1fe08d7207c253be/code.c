@@ -11,7 +11,7 @@ void selectionSort(char arr[][100],int n){
         }
         strcpy(temp,arr[i]);
         strcpy(arr[i],arr[min]);
-        strcmp(arr[min],temp);
+        strcpy(arr[min],temp);
     }
 }
 void printArray(char arr[][100],int n){
