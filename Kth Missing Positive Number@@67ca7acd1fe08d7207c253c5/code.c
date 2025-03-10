@@ -1,5 +1,5 @@
 // Your code here...
-int findKthMissing(int arr[],int n){
+int findKthMissing(int arr[],int n,int k){
     for(int i=1;;i++){
         int count = 0;
         int present = 0;
@@ -9,9 +9,9 @@ int findKthMissing(int arr[],int n){
                 break;
             }
         }
-        if(!present){
+        if(!(present)){
             count++;
-            if(count==n){
+            if(count==k){
                 return i;
             }
         }
