@@ -1,6 +1,7 @@
 // Your code here...
 int findKthMissing(int arr[],int n,int k){
-    while(int i>0){
+    int i = 1;
+    while(1){
         int count = 0;
         int present = 0;
         for(int j=0;j<n;j++){
