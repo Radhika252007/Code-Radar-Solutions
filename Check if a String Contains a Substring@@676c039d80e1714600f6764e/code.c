@@ -8,7 +8,7 @@ int main(){
     char word[60];
     int len = strlen(str);
     for(int i=0,j=0;i<len;i++){
-        while(str[i]!=' '){
+        if(str[i]!=' '&&str[i]!='\0'){
             word[j++]=str[i];
         }
         if((strcmp(word,input)==0)){
