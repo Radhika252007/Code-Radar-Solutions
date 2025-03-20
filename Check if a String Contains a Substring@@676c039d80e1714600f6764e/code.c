@@ -13,7 +13,9 @@ int main(){
         }
         if((strcmp(word,input)==0)){
             printf("Yes");
-            break;
+            return 0;
         }
     }
+    printf("No");
+    return 0;
 }
