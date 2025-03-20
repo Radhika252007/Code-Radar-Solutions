@@ -18,6 +18,6 @@ char* compressString(char* str,char* compressed){
         }
     }
     compressed[index] = '\0';
-    return compressed
+    return compressed;
 
 }
