@@ -1,7 +1,6 @@
 #include <string.h>
 char* compressString(char* str,char* compressed){
     int count = 1;
-    char curr = str[0];
     int index = 0;
     if(strlen(str)==1){
         return str;
@@ -12,8 +11,9 @@ char* compressString(char* str,char* compressed){
         }
         else{
             compressed[index++] = str[i];
+            if(count>1){
             int written = sprintf(&compressed[index],"%d",count);
-            index+=written;
+            index+=written;}
             count = 1;
         }
     }
