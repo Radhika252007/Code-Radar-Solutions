@@ -23,9 +23,9 @@ int main() {
     int i =0,j=a-1;
     while(i<j){
         if(arr[i]+arr[j]==b){
-            printf("%d %d\n",arr[j],arr[i]);
-            while(i<j&&arr[i]==arr[i+1])i++;
-            while(i<j&&arr[j]==arr[j-1])j--;
+            printf("%d %d\n",arr[i],arr[j]);
+            while(i < j && arr[i] == arr[i + 1]) i++;
+            while(i < j && arr[j] == arr[j - 1]) j--;
             i++;
             j--;
         }
