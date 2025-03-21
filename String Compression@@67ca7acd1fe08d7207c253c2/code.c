@@ -18,7 +18,5 @@ char* compressString(char* str,char* compressed){
         }
     }
     compressed[index] = '\0';
-    char* result = (char*)malloc(sizeof(char)*index);
-    return result;
-
+    return compressed;
 }
