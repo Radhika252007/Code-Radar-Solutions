@@ -21,20 +21,25 @@ int main() {
     scanf("%d",&b);
     sort(arr,a);
     int i =0,j=a-1;
-    while(i<j){
-        if(arr[i]+arr[j]==b){
-            printf("%d %d\n",arr[i],arr[j]);
+    while(i < j) {
+        int sum = arr[i] + arr[j];
+        
+        if(sum == b) {
+            printf("%d %d\n", arr[i], arr[j]);
+            
+
             while(i < j && arr[i] == arr[i + 1]) i++;
             while(i < j && arr[j] == arr[j - 1]) j--;
+            
             i++;
             j--;
         }
-        else if(arr[i]+arr[j]<b){
+        else if(sum < b) {
+            i++;
+        }
+        else {
             j--;
         }
-        else{
-            i++;
-        } 
     }
     
     return 0;
