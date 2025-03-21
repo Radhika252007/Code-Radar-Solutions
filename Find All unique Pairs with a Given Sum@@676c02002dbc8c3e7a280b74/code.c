@@ -23,7 +23,7 @@ int main() {
     int i =0,j=a-1;
     while(i<j){
         if(arr[i]+arr[j]==b){
-            printf("%d %d\n",arr[i],arr[j]);
+            printf("%d %d\n",arr[j],arr[i]);
             i++;
         }
         else if(arr[i]+arr[j]<b){
