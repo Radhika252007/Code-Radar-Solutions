@@ -7,7 +7,7 @@ int main() {
     scanf("%s",&ch2);
     int len = strlen(ch);
     char temp = ch[len-1];
-    for(int i=len-2;i>0;i--){
+    for(int i=len-2;i>=0;i--){
         ch[i+1]=ch[i];
     }
     ch[0]=temp;
