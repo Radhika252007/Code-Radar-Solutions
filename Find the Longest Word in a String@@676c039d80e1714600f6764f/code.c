@@ -14,7 +14,7 @@ char* longest_word(char* s){
     int len = strlen(s);
     char nonwords[] = " ,.;\n\t";
     char current[250];
-    char max_word[250];
+    static char max_word[250];
     int i=0;
     while(i<len){
         count=0;
