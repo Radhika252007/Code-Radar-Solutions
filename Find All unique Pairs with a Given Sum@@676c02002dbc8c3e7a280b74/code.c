@@ -27,10 +27,10 @@ int main() {
             i++;
         }
         else if(arr[i]+arr[j]<b){
-            i++;
+            j--;
         }
         else{
-            j--;
+            i++;
         } 
     }
     
