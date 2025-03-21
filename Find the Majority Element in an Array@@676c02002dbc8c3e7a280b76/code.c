@@ -18,20 +18,24 @@ int main() {
                 }
             }
             freq[i]=count;
+            if(freq[i]>a/2){
+                printf("%d",arr[i]);
+                break;
+            }
         }
     }
-    int k=0;
-    int max = 0;
-    for(int i=0;i<a;i++){
-        if(freq[i]>a/2){
-           printf("%d",arr[i]);
-           break;
-        }
-        else{
-            printf("%d",-1);
-            break;
-        }
-    }
+    // int k=0;
+    // int max = 0;
+    // for(int i=0;i<a;i++){
+    //     if(freq[i]>a/2){
+    //        printf("%d",arr[i]);
+    //        break;
+    //     }
+    //     else{
+    //         printf("%d",-1);
+    //         break;
+    //     }
+    // }
     
     return 0;
 }
