@@ -2,7 +2,7 @@
 void sort(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
+            if(arr[i]>arr[j]){
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -24,7 +24,10 @@ int main() {
     while(i<j){
         if(arr[i]+arr[j]==b){
             printf("%d %d\n",arr[j],arr[i]);
+            while(i<j&&arr[i]==arr[i+1])i++;
+            while(i<j&&arr[j]==arr[j-1])j--;
             i++;
+            j--;
         }
         else if(arr[i]+arr[j]<b){
             j--;
