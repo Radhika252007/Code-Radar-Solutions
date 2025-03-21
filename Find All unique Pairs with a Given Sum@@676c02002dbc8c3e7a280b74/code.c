@@ -15,6 +15,6 @@
               if(arr[i]+arr[j]==b && (arr[i]!=arr[j] || count==0)){
                  printf("%d %d\n",arr[i],arr[j]);
                  count++;
-             }}
+             }}}
      return 0;
- }}
+ }
