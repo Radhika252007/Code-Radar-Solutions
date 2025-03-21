@@ -1,5 +1,15 @@
 #include <stdio.h>
-
+void sort(int arr[],int n){
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>arr[j]){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
 int main() {
     int a;
     scanf("%d",&a);
@@ -9,14 +19,20 @@ int main() {
     }
     int b;
     scanf("%d",&b);
-    int count = 0;
-    for(int i=0;i<a-1;i++){
-        for(int j=1+i;j<a;j++){
-            if((arr[i]+arr[j]==b)&&(arr[i]!=arr[j]||count==0)){
-                printf("%d %d\n",arr[i],arr[j]);
-                count++;
-            }
+    sort(arr,a);
+    int i =0,j=a-1;
+    while(i<j){
+        if(arr[i]+arr[j]==b){
+            printf("%d %d\n",i,j);
+            i++;
         }
+        else if(arr[i]+arr[j]<b){
+            i++;
+        }
+        else{
+            j--;
+        } 
     }
+    
     return 0;
 }
