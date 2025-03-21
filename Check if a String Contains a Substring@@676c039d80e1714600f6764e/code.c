@@ -10,7 +10,7 @@ int main(){
     if(strstr(str,input)){
         printf("Yes");
     }
-    e;se{
+    else{
     printf("No");}
     return 0;
 }
