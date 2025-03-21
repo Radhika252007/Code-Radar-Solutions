@@ -20,7 +20,7 @@ int main() {
             freq[i]=count;
             if(freq[i]>a/2){
                 printf("%d",arr[i]);
-                break;
+                return 0;
             }
         }
     }
@@ -37,5 +37,5 @@ int main() {
     //     }
     // }
     
-    return 0;
+    return -1;
 }
