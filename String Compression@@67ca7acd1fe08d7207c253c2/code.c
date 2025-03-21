@@ -5,7 +5,7 @@ char* compressString(char* str,char* compressed){
     if(strlen(str)==1){
         return str;
     }
-    static char compressed;
+    static char* compressed;
     for(int i=0;i<strlen(str);i++){
         if((str[i]==str[i+1])&&i+1<strlen(str)){
             count++;
