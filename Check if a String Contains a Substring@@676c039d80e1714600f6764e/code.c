@@ -7,15 +7,10 @@ int main(){
     fgets(input,60,stdin);
     char word[60];
     int len = strlen(str);
-    for(int i=0,j=0;i<len;i++){
-        if(str[i]!=' '&&str[i]!='\0'){
-            word[j++]=str[i];
-        }
-        if((strcmp(word,input)==0)){
-            printf("Yes");
-            return 0;
-        }
+    if(strstr(str,input)){
+        printf("Yes");
     }
-    printf("No");
+    e;se{
+    printf("No");}
     return 0;
 }
