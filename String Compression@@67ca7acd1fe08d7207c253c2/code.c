@@ -1,10 +1,11 @@
 #include <string.h>
-char* compressString(char* str,static char* compressed){
+char* compressString(char* str,char* compressed){
     int count = 1;
     int index = 0;
     if(strlen(str)==1){
         return str;
     }
+    static compressed;
     for(int i=0;i<strlen(str);i++){
         if((str[i]==str[i+1])&&i+1<strlen(str)){
             count++;
