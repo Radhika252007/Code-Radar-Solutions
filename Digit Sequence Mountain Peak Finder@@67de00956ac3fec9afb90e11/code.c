@@ -15,9 +15,6 @@ int mountainPeak(int n){
             j--;
         }
     }
-    if(n_str[i]<n_str[i-1]){
-        return -1;
-    }
     int res = n_str[i]-'0'+1;
     return res;
 }
