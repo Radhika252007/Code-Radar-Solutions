@@ -19,7 +19,7 @@ int incrementToPrimeDigits(int n){
         else if(digit==2){
             digit = 3;
         }
-        else if(digit ==1){
+        else{
             digit=2;
         }
         reversed = reversed*10+digit;
