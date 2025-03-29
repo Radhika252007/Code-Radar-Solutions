@@ -1,4 +1,4 @@
-#include <stdlib.h>
+
 int mountainPeak(int n){
     char n_str[30];
     int len = sprintf(n_str,"%d",n);
@@ -15,6 +15,6 @@ int mountainPeak(int n){
             j--;
         }
     }
-    char res = n_str[i];
-    return atoi(res);
+    int res = n_str[i]-'0';
+    return res;
 }
