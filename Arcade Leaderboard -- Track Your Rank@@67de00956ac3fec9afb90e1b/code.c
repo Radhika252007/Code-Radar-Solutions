@@ -12,11 +12,11 @@ void trackPlayerRanks(int arr[],int n, int player[],int m, int result[]){
         }
     }
     for(int i=0;i<m;i++){
-        binarySearch(arr,player[i],n,result);
+        binarySearch(arr,player[i],n,result,rank);
     }
 
 }
-void binarySearch(int arr[],int target,int n,int result[]){
+void binarySearch(int arr[],int target,int n,int result[],int rank[]){
     int start = 0, end = n-1, k =0;
     while(start<=end){
         mid = (end-start)/2;
