@@ -12,7 +12,13 @@ void bubbleSort(int arr[],int n){
 void deflateBalloons(int arr[],int n){
     bubbleSort(arr,n);
     printf("%d\n",n);
-    int previous = arr[0];
+    int previous;
+    for(int i=0;i<n;i++){
+        if(arr[i]>0){
+            previous=arr[i];
+            break;
+        }
+    }
     for(int i=0;i<n;i++){
         if(arr[i]>previous){
             printf("%d\n",n-i);
