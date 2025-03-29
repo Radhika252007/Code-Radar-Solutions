@@ -3,7 +3,7 @@ void trackPlayerRanks(int arr[],int n, int player[],int m, int result[]){
     int rank[300000];
     int count = 0;
     int r=1;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         if(arr[i]==arr[i+1]){
             rank[i]=r;
             rank[i+1]=r;
