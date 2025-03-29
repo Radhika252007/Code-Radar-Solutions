@@ -2,14 +2,14 @@ void binarySearch(int arr[],int target,int n,int result[],int rank[],int index);
 void trackPlayerRanks(int arr[],int n, int player[],int m, int result[]){
     int rank[300000];
     int count = 0;
+    rank[0]=1;
     int r=1;
-    for(int i=0;i<n;i++){
-        if(arr[i]==arr[i+1]){
+    for(int i=1;i<n;i++){
+        if(arr[i]==arr[i-1]){
             rank[i]=r;
-            rank[i+1]=r;
         }
         else{
-            rank[i+1]=++r;
+            rank[i]=++r;
         }
     }
     for(int i=0;i<m;i++){
