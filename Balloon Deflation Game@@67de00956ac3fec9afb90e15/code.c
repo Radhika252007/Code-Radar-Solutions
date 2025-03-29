@@ -11,6 +11,7 @@ void bubbleSort(int arr[],int n){
 }
 void deflateBalloons(int arr[],int n){
     bubbleSort(arr,n);
+    printf("%d\n",n);
     for(int i=0;i<n;i++){
         int min = 0;
         int count =0;
@@ -21,8 +22,10 @@ void deflateBalloons(int arr[],int n){
             }
         }
         for(int j=0;j<n;j++){
-            if(arr[j]>0){
                 arr[j]=arr[j]-min;
+        }
+        for(int a = 0;a<n;a++){
+            if(arr[a]!=0){
                 count++;
             }
         }
