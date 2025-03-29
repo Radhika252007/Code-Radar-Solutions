@@ -35,6 +35,8 @@ void binarySearch(int arr[],int target,int n,int result[],int rank[],int index){
     if(target>arr[0]){
         result[index]=1;
     }
-    else{
-        result[index]=rank[end]+1;
+    else if (end >= 0) {
+        result[index] = rank[end] + 1;
+    } else {
+        result[index] = rank[0] + 1; 
     }}
