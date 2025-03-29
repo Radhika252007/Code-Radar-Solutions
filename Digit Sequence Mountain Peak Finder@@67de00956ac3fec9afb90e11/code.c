@@ -7,7 +7,7 @@ int mountainPeak(int n){
     }
     int i =0,j=len-1;
     while(i<=j){
-        if(n_str[i]!=n_str[j] && n_str[i]<=n_str[i+1]){
+        if(n_str[i]!=n_str[j]){
             return -1;
         }
         else{
