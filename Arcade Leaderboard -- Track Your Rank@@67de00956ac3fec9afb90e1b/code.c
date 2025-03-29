@@ -18,7 +18,7 @@ void trackPlayerRanks(int arr[],int n, int player[],int m, int result[]){
 
 }
 void binarySearch(int arr[],int target,int n,int result[],int rank[],int index){
-    int start = 0, end = n-1,;
+    int start = 0, end = n-1;
     while(start<=end){
         int mid = (end-start)/2;
         if(arr[mid]==target){
