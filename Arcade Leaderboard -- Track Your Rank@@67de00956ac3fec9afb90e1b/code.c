@@ -1,3 +1,4 @@
+void binarySearch(int arr[],int target,int n,int result[],int rank[]);
 void trackPlayerRanks(int arr[],int n, int player[],int m, int result[]){
     int rank[300000];
     int count = 0;
