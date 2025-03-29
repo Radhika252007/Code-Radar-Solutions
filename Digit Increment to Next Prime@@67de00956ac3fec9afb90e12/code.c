@@ -7,7 +7,7 @@ int incrementToPrimeDigits(int n){
         if(digit>=7){
             digit = 2;
         }
-        else if(digit>=5&digit<7){
+        else if(digit>=5&&digit<7){
             digit = 7;
         }
         else if(digit>=3&&digit<5){
