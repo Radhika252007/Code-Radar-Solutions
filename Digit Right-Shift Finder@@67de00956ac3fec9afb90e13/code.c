@@ -1,6 +1,6 @@
 #include <stdlib.h>
 int digitRightShift(int n){
-    int n_str[];
+    char n_str[];
     int len = sprintf(n_str,"%d",n);
     char temp = n_str[len];
     for(int i=len-1;i>=0;i--){
