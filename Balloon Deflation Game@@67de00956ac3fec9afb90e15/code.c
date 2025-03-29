@@ -12,6 +12,7 @@ void bubbleSort(int arr[],int n){
 void deflateBalloons(int arr[],int n){
     bubbleSort(arr,n);
     for(int i=0;i<n;i++){
+        int min = 0;
         int count =0;
         for(int k=0;k<n;k++){
             if(arr[k]!=0){
