@@ -16,7 +16,7 @@ int incrementToPrimeDigits(int n){
         else if(digit==2){
             digit = 3;
         }
-        else{
+        else if(digit==0 || digit ==1){
             digit=2;
         }
         reversed = reversed*10+digit;
