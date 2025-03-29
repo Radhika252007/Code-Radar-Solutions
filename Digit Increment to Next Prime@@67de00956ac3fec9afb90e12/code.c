@@ -2,6 +2,9 @@
 #include <stdlib.h>
 int incrementToPrimeDigits(int n){
     int reversed = 0;
+    if(n==0){
+        return 2;
+    }
     while(n!=0){
         int digit = n%10;
         if(digit>=7){
