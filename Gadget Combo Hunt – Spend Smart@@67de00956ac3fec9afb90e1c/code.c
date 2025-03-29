@@ -6,7 +6,7 @@ int maxGadgetSpend(int keyboard[],int n, int headsets[],int m, int budget){
             int result = keyboard[i]+headsets[j];
             if((result<=budget)&&(result>max)){
                 max = result;
-                flag = 1;
+                flag = 0;
             }
         }
     }
