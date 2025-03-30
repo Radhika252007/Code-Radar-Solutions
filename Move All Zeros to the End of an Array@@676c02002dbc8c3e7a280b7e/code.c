@@ -6,22 +6,17 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int arr1[100];
-    int count=0;
+    int j=0;
     for(int i=0;i<a;i++){
         if(arr[i]!=0){
-            arr1[count]=arr[i];
-            count++;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            j++;
         }
     }
-    for(int j=0;j<a;j++){
-        if(arr[j]==0){
-            arr1[count]=arr[j];
-            count++;
-        }
-    }
-    for(int k=0;k<a;k++){
-        printf("%d ",arr1[k]);
+    for(int i=0;i<a;i++){
+        printf("%d ",arr[i]);
     }
     return 0;
 }
