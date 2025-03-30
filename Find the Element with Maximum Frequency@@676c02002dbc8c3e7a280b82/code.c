@@ -8,6 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
         freq[i]=1;
     }
+    int max = 0,index = 0;
     for(int i=0;i<a;i++){
         if(freq[i]==1){
             for(int j=i+1;j<a;j++){
@@ -17,15 +18,11 @@ int main() {
                 }
             }
         }
-    }
-    int k=0;
-    int max = freq[0];
-    for(int i=0;i<a;i++){
-        if(freq[i]>max){
+        if(freq[i]>0 && freq[i]>max){
             max = freq[i];
-            k = i;
-        }
+            index = i;
+            }
     }
-    printf("%d",arr[k]);
+    printf("%d",arr[index]);
     return 0;
 }
