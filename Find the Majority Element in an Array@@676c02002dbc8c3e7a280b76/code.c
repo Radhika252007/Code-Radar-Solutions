@@ -19,7 +19,7 @@ int main() {
             freq--;
         }
     }
-    if(freq>n/2){
+    if(freq>a/2){
         printf("%d",ans);
     }
     else{
