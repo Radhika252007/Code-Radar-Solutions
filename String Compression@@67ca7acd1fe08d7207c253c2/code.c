@@ -12,7 +12,7 @@ char* compressString(char str[],char compressed[]){
         else{
             compressed[index++] = str[i];
             if(count>1){
-                char count[50]
+                char count[50];
                 int written = sprintf(count,"%d",count);
                 strcat(compressed,count);
                 index+=written;
