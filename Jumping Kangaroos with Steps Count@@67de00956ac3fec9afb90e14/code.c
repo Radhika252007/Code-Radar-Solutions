@@ -7,7 +7,7 @@ int kangaroo(int x1, int v1, int x2, int v2){
             return -1;
         }
     }
-    else if(((x2-x1)%(v1-v2)==0)&&((x2-x1)/(v1-v2))){
+    else if(((x2-x1)%(v1-v2)==0)&&((x2-x1)/(v1-v2)>0)){
         jumps = (x2-x1)/(v1-v2);
         return jumps;
     }
