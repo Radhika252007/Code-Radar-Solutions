@@ -7,7 +7,7 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    if(n==1){
+    if(a==1){
         printf("%d",-1);
         return 0;
     }
