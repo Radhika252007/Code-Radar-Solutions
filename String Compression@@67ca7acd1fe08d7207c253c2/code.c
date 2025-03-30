@@ -12,7 +12,7 @@ void compressString(char str[],char compressed[]){
             if(count>1){
                 char digits[50];
                 int written = sprintf(digits,"%d",count);
-                strcat(compressed,digits);
+                strcpy(&compressed[index],digits);
                 index+=written;
             }
             count = 1;
