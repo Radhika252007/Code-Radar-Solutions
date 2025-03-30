@@ -24,18 +24,7 @@ int main() {
             }
         }
     }
-    // int k=0;
-    // int max = 0;
-    // for(int i=0;i<a;i++){
-    //     if(freq[i]>a/2){
-    //        printf("%d",arr[i]);
-    //        break;
-    //     }
-    //     else{
-    //         printf("%d",-1);
-    //         break;
-    //     }
-    // }
+
     printf("%d",-1);
     return 0;
 }
