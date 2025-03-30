@@ -7,9 +7,9 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int freq = 1,ans = 0;
+    int freq = 0,ans = 0;
     for(int i=0;i<a;i++){
-        if(freq==1){
+        if(freq==0){
             ans = arr[i];
         }
         if(ans==arr[i]){
@@ -19,7 +19,13 @@ int main() {
             freq--;
         }
     }
-    if(freq>a/2){
+    int count=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]==ans){
+            count++;
+        }
+    }
+    if(count>a/2){
         printf("%d",ans);
     }
     else{
