@@ -6,18 +6,16 @@ int main() {
     int arr[a],freq[a];
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
-        freq[i]=-1;
+        freq[i]=1;
     }
     for(int i=0;i<a;i++){
-        if(freq[i]==-1){
-            int count =1;
+        if(freq[i]==1){
             for(int j=i+1;j<a;j++){
                 if(arr[i]==arr[j]){
-                    count++;
+                    freq[i]++;
                     freq[j]=0;
                 }
             }
-            freq[i]=count;
         }
     }
     int k=0;
