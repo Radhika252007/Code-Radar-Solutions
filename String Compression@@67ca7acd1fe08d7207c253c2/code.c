@@ -1,5 +1,5 @@
 #include <string.h>
-char* compressString(char str[],char compressed[]){
+void compressString(char str[],char compressed[]){
     int count = 1;
     int index = 0;
     if(strlen(str)==1){
