@@ -10,9 +10,9 @@ void compressString(char str[],char compressed[]){
         else{
             compressed[index++] = str[i];
             if(count>1){
-                char count[50];
-                int written = sprintf(count,"%d",count);
-                strcat(compressed,count);
+                char digits[50];
+                int written = sprintf(digits,"%d",count);
+                strcat(compressed,digits);
                 index+=written;
             }
             count = 1;
