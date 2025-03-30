@@ -11,7 +11,7 @@ int main() {
     int result = -1;
     for(int j=0;j<a;j++){
         if(arr[j]%2==0){
-            if(arr[j]>result){
+            if(arr[j]>result||result = -1){
                 result=arr[j];
             }
         }
