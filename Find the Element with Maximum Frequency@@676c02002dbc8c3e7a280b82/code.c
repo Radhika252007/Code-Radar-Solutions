@@ -18,7 +18,7 @@ int main() {
                 }
             }
         }
-        if(freq[i]>0 && freq[i]>max){
+        if(freq[i]>max){
             max = freq[i];
             index = i;
             }
