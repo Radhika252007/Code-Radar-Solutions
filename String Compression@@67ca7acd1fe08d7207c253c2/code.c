@@ -1,5 +1,5 @@
 #include <string.h>
-char* compressString(char* str,char* compressed){
+char* compressString(char str[],char compressed[]){
     int count = 1;
     int index = 0;
     if(strlen(str)==1){
@@ -12,7 +12,7 @@ char* compressString(char* str,char* compressed){
         else{
             compressed[index++] = str[i];
             if(count>1){
-            int written = sprintf(&compressed[index],"%d",count);
+            int written = sprintf(compressed[index],"%d",count);
             index+=written;}
             count = 1;
         }
