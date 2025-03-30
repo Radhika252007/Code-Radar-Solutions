@@ -7,8 +7,16 @@ int main() {
     for(int i=0;i<a;i++){
         scanf("%d",&arr[i]);
     }
-    int max = arr[0],sec_max = -1;
-    for(int i=0;i<a;i++){
+    int max,sec_max;
+    if(arr[0]>arr[1]){
+        max = arr[0];
+        sec_max = arr[1];
+    }
+    else{
+        max = arr[1];
+        sec_max = arr[0];
+    }
+    for(int i=2;i<a;i++){
         if(arr[i]>max){
             sec_max = max;
             max = arr[i];
