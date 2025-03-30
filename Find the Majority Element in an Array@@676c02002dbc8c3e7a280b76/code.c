@@ -8,7 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int freq = 1,ans = 0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<a;i++){
         if(freq==1){
             ans = arr[i];
         }
@@ -20,9 +20,9 @@ int main() {
         }
     }
     if(freq>n/2){
-        return ans;
+        printf("%d",ans);
     }
     else{
-        return -1;
+        printf("%d",-1);
     }
 }
