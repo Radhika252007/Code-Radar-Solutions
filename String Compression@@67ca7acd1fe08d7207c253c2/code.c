@@ -2,8 +2,9 @@
 void compressString(char str[],char compressed[]){
     int count = 1;
     int index = 0;
-    for(int i=0;i<strlen(str);i++){
-        if((str[i]==str[i+1])&&i+1<strlen(str)){
+    int len = strlen(str);
+    for(int i=0;i<len;i++){
+        if((i+1<len)&&(str[i]==str[i+1])){
             count++;
         }
         else{
